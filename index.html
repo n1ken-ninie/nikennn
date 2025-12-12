@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-size:30px">Menit.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNews" aria-controls="navbarNews" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNews">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Nasional</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Internasional</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Olahraga</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Teknologi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Hiburan</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- MARQUEE BAR -->
+  <div class="bg-danger text-white py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <marquee behavior="scroll" direction="left" class="fw-semibold">
+        [Populer] Rahasia Beton Romawi Bisa Tahan 2.000 Tahun • Indonesia Peringkat 1 Sumber Serangan Siber • Andai Hitler-Mussolini Menang Perang Dunia II • Terungkap! Pencuri Museum Louvre Lolos dalam 30 Detik.
+      </marquee>
+      <div id="clock" class="fw-bold px-2 text-end" style="width:300px"></div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8">
+              <!-- Carousel Berita -->
+        <div id="carouselNews" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images2/gambar1.jpeg" class="d-block w-100 rounded" alt="Berita 1">
+              <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Berita Utama Hari Ini</h5>
+                <p>Rahasia Beton Romawi Bisa Tahan 2.000 Tahun.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images2/gambar2.jpeg" class="d-block w-100 rounded" alt="Berita 2">
+              <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Serangan Siber</h5>
+                <p>Indonesia Peringkat 1 Sumber Serangan Siber.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images2/gambar3.jpg" class="d-block w-100 rounded" alt="Berita 3">
+              <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Perang Dunia II</h5>
+                <p>Andai Hitler-Mussolini Menang Perang Dunia II?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images2/gambar4.jpg" class="d-block w-100 rounded" alt="Berita 4">
+              <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Museum Louvre</h5>
+                <p>Terungkap! Pencuri Museum Louvre Lolos dalam 30 Detik.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images2/gambar5.jpg" class="d-block w-100 rounded" alt="Berita 5">
+              <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Tempat Wisata</h5>
+                <p>4 Kota di Indonesia Paling Diminati untuk Liburan Akhir Tahun 2025.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNews" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNews" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card p-3 bg-info h-100">
+                  <h2 class="text-center text-light">Berita Populer</h2>
+                  <a href="" class="btn btn-light mb-1 p-3">
+                      Rahasia Beton Romawi Bisa Tahan 2.000 Tahun
+                  </a>
+                  <a href="" class="btn btn-light mb-1 p-3">
+                      Indonesia Peringkat 1 Sumber Serangan Siber
+                  </a>
+                  <a href="" class="btn btn-light mb-1 p-3">
+                      Andai Hitler-Mussolini Menang Perang Dunia II
+                  </a>
+                  <a href="" class="btn btn-light mb-1 p-3">
+                      Terungkap! Pencuri Museum Louvre Lolos dalam 30 Detik.
+                  </a>
+                  <a href="" class="btn btn-light mb-1 p-3">
+                      4 Kota di Indonesia Paling Diminati untuk Liburan Akhir Tahun 2025
+                  </a>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <h4>Berita Utama</h4>
+      <hr>
+  </div>
+  <div class="container">
+      <div class="row">
+          <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images2/gberita1.jpeg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Berita Percakapan Prabowo & Trump</h6>
+            <p class="news-summary">Dalam rekaman video yang tersebar luas di dunia maya, Prabowo yang tampak berada di belakang podium meminta bantuan Trump untuk bertemu anaknya, Eric Trump.</p>
+            <a href="berita-percakapan-prabowo-trump.html" class="nav-link text-primary">Selengkapnya...</a>    
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images2/gberita2.jpeg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Gajah jadi Korban Banjir di Aceh, Guru Besar UGM Sebut Habitat Satwa Liar Tergusur oleh Alih Fungsi Lahan</h6>
+            <p class="news-summary">Bencana banjir dan longsor yang terjadi di Sumatera tak hanya menelan ratusan korban jiwa, namun juga merusak habitat dari satwa dan menewaskannya.</p>
+            <a href="berita-Gajah-jadi-Korban-Banjir-di -Aceh.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images2/gberita3.jpeg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Polisi Beber Kronologi Pesta Gay Berujung Penggerebekan di Hotel Surabaya</h6>
+            <p class="news-summary">Sebanyak 34 pria yang terlibat dalam pesta gay di salah satu hotel kawasan Ngagel Surabaya telah ditetapkan sebagai tersangka. Polisi membeberkan kronologi terjadinya peristiwa tersebut.</p>
+            <a href="Polisi-Beber-Kronologi-Pesta-Gay-Berujung-Penggerebekan-di-Hotel-Surabaya.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images2/gberita4.jpeg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Berita Lando Norris Resmi Juara F1 2025 usai Naik Podium di GP Abu Dhabi</h6>
+            <p class="news-summary">Lando Norris menjadi Juara Dunia Formula 1 2025 setelah finis di posisi ketiga pada Grand Prix Abu Dhabi, Minggu (7/12/2025). Hasil tersebut sudah cukup untuk mengamankan gelar pertamanya, sekaligus menutup musim dengan keunggulan tipis dua poin atas rival utamanya, Max Verstappen.</p>
+            <a href="berita-Juara-F1-2025-di-Abu-Dhabi.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images2/gberita5.jpeg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Penghapusan KASN</h6>
+            <p class="news-summary">Mahkamah Konstitusi (MK) mengabulkan sebagian gugatan Perkumpulan untuk Pemilu dan Demokrasi (Perludem), Komite Pemantauan Pelaksanaan Otonomi Daerah, dan Indonesia Corruption Watch (ICW) terkait ditiadakannya Komisi Aparatur Sipil Negara (KASN).</p>
+            <a href="berita-penghapusan-KASN.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images2/gberita6.jpeg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Rapat Pimpinan DPR-KPI-KOMDIGI</h6>
+            <p class="news-summary">DPR RI menerima audiensi dari Himpunan Alumni Santri Pondok Pesantren Lirboyo dengan Trans7 hari ini. Audiensi tersebut berkaitan dengan penayangan program siaran Xpose Uncensored di Trans7.</p>
+            <a href="berita-rapat-pimpinan-DPR-KPI-komdigi.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Menit.com</h5>
+          <p>Portal berita terpercaya yang menyajikan informasi terkini, akurat, dan mendalam dari berbagai bidang.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Kategori</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="nav-link">Nasional</a></li>
+            <li><a href="#" class="nav-link">Internasional</a></li>
+            <li><a href="#" class="nav-link">Teknologi</a></li>
+            <li><a href="#" class="nav-link">Olahraga</a></li>
+            <li><a href="#" class="nav-link">Hiburan</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Kontak</h5>
+          <p>Email: redaksi@menit.com<br>Telepon: +62 812 3456 7890</p>
+          <div>
+            <a href="#" class="me-3 nav-link">Facebook</a>
+            <a href="#" class="me-3 nav-link">Twitter</a>
+            <a href="#" class="nav-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">© 2025 Menit.com. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    // Menampilkan jam real-time
+    setInterval(() => {
+      const now = new Date();
+      document.getElementById('clock').textContent = now.toLocaleString('id-ID');
+    }, 1000);
+  </script>
+</body>
+</html>
